@@ -79,8 +79,8 @@ if __name__ == '__main__':
     # 步骤 5: 创建数据集和加载器
     tokenizer = AutoTokenizer.from_pretrained('bert-base-chinese')
     
-    real_news_path = 'C:\\Users\\18210\\Desktop\\科研\\iTransformerfusion\\data\\AAPL_text_processed.csv'
-    real_stock_path = 'C:\\Users\\18210\\Desktop\\科研\\iTransformerfusion\\data\\AAPL_price_processed.csv'
+    real_news_path = '.\\data\\AAPL_text_processed.csv'
+    real_stock_path = '.\\data\\AAPL_price_processed.csv'
     
     # [!! 核心修改 !!] 传入 pred_len 和 stock_features
     train_dataset = MyFusionDataset(
@@ -219,7 +219,7 @@ if __name__ == '__main__':
         'Actual_Close': labels_np
     })
     
-    output_csv_path = 'C:\\Users\\18210\\Desktop\\科研\\iTransformerfusion\\data\\prediction_results.csv'
+    output_csv_path = '.\\data\\prediction_results.csv'
     results_df.to_csv(output_csv_path, index=False)
     
     print(f"预测结果已成功保存到: {output_csv_path}")
