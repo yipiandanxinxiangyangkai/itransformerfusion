@@ -1,7 +1,4 @@
 # itransformerfusion
-### Prerequisites
-
-Ensure you have **Python** installed on your system (Recommended version: e.g., 3.8+).
 
 ### Running the Program
 
